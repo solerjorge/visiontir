@@ -1,31 +1,39 @@
 # Scripts
 
-This directory contains utility scripts for development, deployment, and maintenance.
+Este directorio contiene scripts de utilidad para desarrollo, despliegue y mantenimiento.
 
-## Available Scripts
+## Scripts Disponibles
 
-Add your utility scripts here, such as:
-- Data preprocessing scripts
-- Model training scripts
-- Deployment scripts
-- Maintenance scripts
+Agrega tus scripts de utilidad aquí, como:
+- Scripts de preprocesamiento de datos
+- Scripts de deployment
+- Scripts de mantenimiento
+- Scripts de automatización
 
-## Usage
+## Uso
 
-Make scripts executable:
+### Scripts de Shell
+
+Haz los scripts ejecutables:
 
 ```bash
-chmod +x scripts/your_script.sh
+chmod +x scripts/tu_script.sh
 ```
 
-Run scripts:
+Ejecuta scripts:
 
 ```bash
-./scripts/your_script.sh
+./scripts/tu_script.sh
 ```
 
-Or for Python scripts:
+### Scripts de JavaScript
 
 ```bash
-python scripts/your_script.py
+node scripts/tu_script.js
+```
+
+### Scripts de PHP
+
+```bash
+php scripts/tu_script.php
 ```

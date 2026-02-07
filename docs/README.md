@@ -1,27 +1,52 @@
-# Documentation
+# Documentación
 
-This directory contains the documentation for VisionTIR.
+Este directorio contiene la documentación para VisionTIR.
 
-## Building Documentation
+## Generación de Documentación
 
-To build the documentation locally:
+Puedes usar herramientas como:
+- **JSDoc** para documentación de JavaScript
+- **PHPDocumentor** para documentación de PHP
+
+### JavaScript (JSDoc)
 
 ```bash
-cd docs
-pip install -r requirements.txt
-make html
+npm install -g jsdoc
+jsdoc -c jsdoc.json
 ```
 
-The built documentation will be available in `docs/_build/html/`.
+### PHP (PHPDocumentor)
 
-## Structure
+```bash
+composer require --dev phpdocumentor/phpdocumentor
+vendor/bin/phpdoc -d src -t docs/build
+```
 
-- `source/` - Documentation source files
-- `_build/` - Built documentation (gitignored)
-- `requirements.txt` - Documentation dependencies
+## Estructura
 
-## Writing Documentation
+- `api/` - Documentación de la API
+- `guides/` - Guías de usuario
+- `build/` - Documentación generada (gitignored)
 
-Documentation is written in reStructuredText and built with Sphinx.
+## Escribir Documentación
 
-For more information on Sphinx documentation, visit: https://www.sphinx-doc.org/
+La documentación puede estar en Markdown o generarse automáticamente desde los comentarios del código.
+
+### JavaScript
+```javascript
+/**
+ * Descripción de la función
+ * @param {string} param - Descripción del parámetro
+ * @returns {boolean} Descripción del retorno
+ */
+```
+
+### PHP
+```php
+/**
+ * Descripción de la función
+ * 
+ * @param string $param Descripción del parámetro
+ * @return bool Descripción del retorno
+ */
+```
