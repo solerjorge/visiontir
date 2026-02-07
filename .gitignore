@@ -1,126 +1,84 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-PIPFILE.lock
-
-# PyInstaller
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
+# Logs
+logs
 *.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
-# Flask stuff:
-instance/
-.webassets-cache
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Scrapy stuff:
-.scrapy
+# Coverage directory
+coverage/
+*.lcov
+.nyc_output
 
-# Sphinx documentation
-docs/_build/
+# Dependency directories
+jspm_packages/
 
-# PyBuilder
-target/
+# TypeScript cache
+*.tsbuildinfo
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Optional npm cache directory
+.npm
 
-# IPython
-profile_default/
-ipython_config.py
+# Optional eslint cache
+.eslintcache
 
-# pyenv
-.python-version
+# Optional REPL history
+.node_repl_history
 
-# pipenv
-Pipfile.lock
+# Output of 'npm pack'
+*.tgz
 
-# PEP 582
-__pypackages__/
+# Yarn
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+# Build output
+dist/
+build/
+out/
 
-# SageMath parsed files
-*.sage.py
-
-# Environments
+# PHP/Laravel
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
 .env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# Composer
+composer.phar
+composer.lock
 
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
+# Laravel specific
+bootstrap/cache/*.php
+storage/framework/cache/**
+storage/framework/sessions/**
+storage/framework/testing/**
+storage/framework/views/**
+storage/logs/**
 
 # IDEs
 .vscode/
@@ -128,8 +86,6 @@ dmypy.json
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
 Thumbs.db
 
@@ -138,7 +94,11 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
-models/
-*.h5
-*.pkl
-*.pth
+
+# Testing
+.phpunit.cache/
+
+# Cache
+.cache/
+tmp/
+temp/

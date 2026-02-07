@@ -1,91 +1,87 @@
 # VisionTIR
 
-VisionTIR is a Python package for vision and thermal infrared image analysis.
+VisionTIR es un proyecto de visión y análisis de imágenes térmicas infrarrojas.
 
-## Features
+## Tecnologías
 
-- Image processing and analysis
-- Thermal infrared data handling
-- Computer vision utilities
-- Visualization tools
+- **Frontend**: JavaScript/Node.js (opcional)
+- **Backend**: PHP/Laravel (opcional)
 
-## Installation
-
-### From source
-
-```bash
-git clone https://github.com/solerjorge/visiontir.git
-cd visiontir
-pip install -e .
-```
-
-### For development
-
-```bash
-pip install -e ".[dev]"
-```
-
-## Quick Start
-
-```python
-import visiontir
-
-# Your code here
-```
-
-## Project Structure
+## Estructura del Proyecto
 
 ```
 visiontir/
-├── src/
-│   └── visiontir/          # Main package source code
-│       └── __init__.py
-├── tests/                   # Unit tests
-│   └── __init__.py
-├── docs/                    # Documentation
-├── examples/                # Example scripts and notebooks
-├── scripts/                 # Utility scripts
-├── data/                    # Data directory (gitignored)
-├── requirements.txt         # Production dependencies
-├── requirements-dev.txt     # Development dependencies
-├── pyproject.toml          # Project configuration
-├── setup.py                # Setup script
-└── README.md               # This file
+├── frontend/              # Aplicación frontend (JavaScript/Node.js)
+│   ├── src/              # Código fuente
+│   ├── public/           # Archivos públicos
+│   └── package.json      # Dependencias Node.js
+├── backend/              # Aplicación backend (PHP/Laravel)
+│   ├── app/             # Lógica de la aplicación
+│   ├── routes/          # Rutas de la API
+│   ├── config/          # Configuración
+│   ├── public/          # Punto de entrada público
+│   └── composer.json    # Dependencias PHP
+├── tests/               # Tests
+├── docs/                # Documentación
+├── scripts/             # Scripts de utilidad
+└── data/                # Datos del proyecto
 ```
 
-## Development
+## Instalación
 
-### Running Tests
+### Frontend (Node.js)
 
 ```bash
-pytest
+cd frontend
+npm install
+npm run dev
 ```
 
-### Code Formatting
+### Backend (PHP/Laravel)
 
 ```bash
-black src/ tests/
+cd backend
+composer install
+php artisan serve
 ```
 
-### Linting
+## Desarrollo
 
+### Frontend
 ```bash
-flake8 src/ tests/
-pylint src/
+cd frontend
+npm run dev      # Servidor de desarrollo
+npm run build    # Build para producción
+npm test         # Ejecutar tests
 ```
 
-## Contributing
+### Backend
+```bash
+cd backend
+composer install           # Instalar dependencias
+php artisan migrate       # Ejecutar migraciones
+php artisan test          # Ejecutar tests
+```
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## Características
 
-## License
+- Procesamiento y análisis de imágenes
+- Manejo de datos térmicos infrarrojos
+- Utilidades de visión por computadora
+- Herramientas de visualización
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Contribuir
 
-## Author
+Lee [CONTRIBUTING.md](CONTRIBUTING.md) para detalles sobre cómo contribuir al proyecto.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## Autor
 
 Jorge Soler
 
-## Contact
+## Contacto
 
-For questions or support, please open an issue on GitHub.
+Para preguntas o soporte, abre un issue en GitHub.

@@ -1,29 +1,33 @@
 # Examples
 
-This directory contains example scripts and notebooks demonstrating how to use VisionTIR.
+Este directorio contiene scripts de ejemplo y notebooks que demuestran cómo usar VisionTIR.
 
-## Contents
+## Contenido
 
-- `basic_usage.py` - Basic usage examples
-- `notebooks/` - Jupyter notebooks with interactive examples
-- `data/` - Sample data for examples (if needed)
+- `frontend/` - Ejemplos de frontend (JavaScript)
+- `backend/` - Ejemplos de backend (PHP)
+- `notebooks/` - Notebooks interactivos (si aplica)
 
-## Running Examples
+## Usando los Ejemplos
 
-To run the examples, make sure you have VisionTIR installed:
-
-```bash
-pip install -e .
-```
-
-Then run any example script:
+### Frontend
 
 ```bash
-python examples/basic_usage.py
+cd examples/frontend
+npm install
+npm run dev
 ```
 
-For Jupyter notebooks:
+### Backend
 
 ```bash
-jupyter notebook examples/notebooks/
+cd examples/backend
+php -S localhost:8000
 ```
+
+## Agregar tus Propios Ejemplos
+
+1. Crea un nuevo archivo en el directorio apropiado
+2. Documenta el propósito del ejemplo
+3. Incluye instrucciones de ejecución
+4. Mantén los ejemplos simples y claros

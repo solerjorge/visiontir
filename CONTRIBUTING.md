@@ -1,89 +1,120 @@
-# Contributing to VisionTIR
+# Contribuyendo a VisionTIR
 
-Thank you for your interest in contributing to VisionTIR! We welcome contributions from the community.
+¡Gracias por tu interés en contribuir a VisionTIR! Aceptamos contribuciones de la comunidad.
 
-## How to Contribute
+## Cómo Contribuir
 
-### Reporting Bugs
+### Reportar Bugs
 
-If you find a bug, please open an issue on GitHub with:
-- A clear title and description
-- Steps to reproduce the issue
-- Expected behavior
-- Actual behavior
-- Your environment (OS, Python version, etc.)
+Si encuentras un bug, por favor abre un issue en GitHub con:
+- Un título claro y descripción
+- Pasos para reproducir el issue
+- Comportamiento esperado
+- Comportamiento actual
+- Tu entorno (OS, versión de Node.js/PHP, etc.)
 
-### Suggesting Features
+### Sugerir Funcionalidades
 
-Feature suggestions are welcome! Please open an issue with:
-- A clear description of the feature
-- Use cases for the feature
-- Any implementation ideas you have
+Las sugerencias de funcionalidades son bienvenidas. Por favor abre un issue con:
+- Una descripción clara de la funcionalidad
+- Casos de uso para la funcionalidad
+- Ideas de implementación que tengas
 
 ### Pull Requests
 
-1. Fork the repository
-2. Create a new branch for your feature (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Add tests for your changes
-5. Run the test suite to ensure everything passes
-6. Format your code with `black`
-7. Lint your code with `flake8` and `pylint`
-8. Commit your changes (`git commit -m 'Add some amazing feature'`)
-9. Push to the branch (`git push origin feature/amazing-feature`)
-10. Open a Pull Request
+1. Haz fork del repositorio
+2. Crea una nueva rama para tu funcionalidad (`git checkout -b feature/nueva-funcionalidad`)
+3. Haz tus cambios
+4. Agrega tests para tus cambios
+5. Ejecuta la suite de tests para asegurar que todo pasa
+6. Formatea tu código
+7. Haz commit de tus cambios (`git commit -m 'Agregar nueva funcionalidad'`)
+8. Haz push a la rama (`git push origin feature/nueva-funcionalidad`)
+9. Abre un Pull Request
 
-## Development Setup
+## Configuración de Desarrollo
 
-1. Clone the repository:
+### Frontend (JavaScript/Node.js)
+
+1. Clona el repositorio:
 ```bash
 git clone https://github.com/solerjorge/visiontir.git
-cd visiontir
+cd visiontir/frontend
 ```
 
-2. Install development dependencies:
+2. Instala dependencias:
 ```bash
-pip install -e ".[dev]"
+npm install
 ```
 
-3. Run tests:
+3. Ejecuta tests:
 ```bash
-pytest
+npm test
 ```
 
-4. Format code:
+4. Formatea código:
 ```bash
-black src/ tests/
+npm run format
 ```
 
-5. Lint code:
+5. Lint código:
 ```bash
-flake8 src/ tests/
-pylint src/
+npm run lint
 ```
 
-## Code Style
+### Backend (PHP/Laravel)
 
-- Follow PEP 8 guidelines
-- Use meaningful variable and function names
-- Add docstrings to functions and classes
-- Keep functions focused and small
-- Write tests for new functionality
+1. Clona el repositorio:
+```bash
+git clone https://github.com/solerjorge/visiontir.git
+cd visiontir/backend
+```
+
+2. Instala dependencias:
+```bash
+composer install
+```
+
+3. Ejecuta tests:
+```bash
+composer test
+```
+
+4. Formatea código:
+```bash
+composer format
+```
+
+## Estilo de Código
+
+### JavaScript
+- Usa ESLint y Prettier
+- Sigue las convenciones del proyecto
+- Usa nombres de variables y funciones descriptivos
+- Mantén las funciones enfocadas y pequeñas
+- Escribe tests para nueva funcionalidad
+
+### PHP
+- Sigue PSR-12
+- Usa Laravel Pint para formatear
+- Usa nombres descriptivos
+- Documenta con PHPDoc
+- Escribe tests para nueva funcionalidad
 
 ## Testing
 
-- Write unit tests for new features
-- Ensure all tests pass before submitting a PR
-- Aim for high code coverage
+- Escribe tests unitarios para nuevas funcionalidades
+- Asegúrate de que todos los tests pasen antes de enviar un PR
+- Busca alta cobertura de código
 
-## Documentation
+## Documentación
 
-- Update documentation for new features
-- Add docstrings following NumPy/Google style
-- Update README.md if necessary
+- Actualiza la documentación para nuevas funcionalidades
+- Agrega docstrings/PHPDoc siguiendo el estilo NumPy/Google
+- Actualiza README.md si es necesario
 
-## Questions?
+## ¿Preguntas?
 
-Feel free to open an issue for any questions about contributing.
+Siéntete libre de abrir un issue para cualquier pregunta sobre cómo contribuir.
 
-Thank you for contributing to VisionTIR!
+¡Gracias por contribuir a VisionTIR!
