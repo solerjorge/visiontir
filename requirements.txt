@@ -1,0 +1,12 @@
+# Core dependencies
+numpy>=1.20.0
+opencv-python>=4.5.0
+pillow>=8.0.0
+matplotlib>=3.3.0
+scipy>=1.6.0
+
+# Optional dependencies for advanced features
+# torch>=1.8.0
+# tensorflow>=2.4.0
+# scikit-learn>=0.24.0
+# pandas>=1.2.0
